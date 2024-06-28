@@ -55,16 +55,61 @@ switch (cor_favorita) {
         console.log("COR INVALIDA")
 }
 
-for (let i = 0; i <= 10; i++){
+for (let i = 0; i <= 10; i++) {
     console.log(i)
 }
 
 let contador = 0
-while(contado < 10){
+while (contador < 10) {
     console.log(contador)
     contador++
 }
 
 //while(true){
- // console.log('oi')
+// console.log('oi')
 //}
+
+do {
+    console.log(contador)
+    contador++
+} while (contador < 10)
+
+function soma(x, y) {
+    let resultado = x + y
+   // console.log(resultado)
+   return resultado
+}
+
+//soma(2, 3)
+//soma(-3, 50)
+
+let valor = soma(2, 3)
+let valor1 = soma(-3, 50)
+let valor2 = soma(valor, valor1)
+
+function ola() {
+    console.log("OLA")
+}
+
+ola()
+
+setInterval(ola, 5000) //Exemplo: usado para criar carrossel
+
+const frutas = ['maçã', 'banana' , 'morango']
+console.log(frutas [0])
+
+for (let f = 0; f < 3; f++) {
+    console.log(frutas[f]) 
+}
+
+for (let f = 0; f < frutas.length; f++) {
+    console.log(frutas[f]) 
+} //melhor forma de leitura de array
+
+for (const f of frutas){
+    console.log(f)
+} //outra forma de leitura de array
+
+frutas.forEach(function(f) {
+    console.log(f)
+})
