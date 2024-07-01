@@ -113,3 +113,25 @@ for (const f of frutas){
 frutas.forEach(function(f) {
     console.log(f)
 })
+
+frutas.push('Manga') //['maça', 'banana, 'morango', 'Manga']
+
+frutas.forEach(function(f){
+    console.log(f)
+})
+
+//debugger funcão para detectar erros
+
+let x = 10
+let y = 'a'
+try {
+    if(y == 0){
+        throw RangeError('Valor zero não é permitido') //RangeError está fora da faixa
+    } else if (typeof(y) == 'string' || typeof(x) == 'string') {
+        throw TypeError('Valor do tipo string não é permitido')
+    }
+    console.log(x/y)
+} catch (error) {
+    console.error("Aconteceu um erro: " + error)
+    console.error(`O erro ${error} aconteceu`)
+}
