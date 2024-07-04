@@ -20,3 +20,10 @@ btn_aviso.addEventListener('click', emiteAlerta)
 function emiteAlerta(){
     alert("O site deseja abrir o Utorrent!")
 }
+
+
+const novo = document.createElement('img')
+novo.src = "https://picsum.photos/200/300?random=1"
+novo.style.border = "1px solid black"
+novo.setAttribute('title', 'Inserido')
+document.querySelector('body').appendChild(novo)
